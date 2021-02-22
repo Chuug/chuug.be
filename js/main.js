@@ -15,3 +15,7 @@ document.querySelectorAll('.cadre').forEach((cadre) => {
 document.querySelectorAll('.progress-bar').forEach((bar) => {
    bar.style.width = bar.getAttribute('aria-valuenow') + "%";
 });
+
+document.querySelector('.backtoup').addEventListener('click', () => {
+   window.scrollTo(0,document.body.scrollTop);
+});
