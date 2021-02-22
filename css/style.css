@@ -257,8 +257,8 @@ a:hover{
   }
 
   .futur {
-     position: relative;
-     right: 10px;
+     border-left: 1px dashed white;
+     margin-left: 20px;
   }
 }
 
@@ -295,6 +295,10 @@ a:hover{
    h1{
        text-align: center;
        font-size: 2em;
+   }
+
+   h3{
+      font-size: 1.5em;
    }
    .photo{
        width: 175px;
