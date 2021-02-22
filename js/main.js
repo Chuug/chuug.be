@@ -11,3 +11,7 @@ document.querySelectorAll('.cadre').forEach((cadre) => {
       cadre.querySelector('.time-circle').classList.remove('tc-colorize');
    })
 });
+
+document.querySelectorAll('.progress-bar').forEach((bar) => {
+   bar.style.width = bar.getAttribute('aria-valuenow') + "%";
+});
