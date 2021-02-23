@@ -43,9 +43,12 @@ document.querySelector('.transition').addEventListener('mouseout', () => {
    avatar.style.transform = 'rotate3d(0,1,0,0deg)';
 });
 
+/*
 let deg = 0;
 
 setInterval(() => {
    deg += 45
    document.querySelector('.cube').style.transform = "rotate3d(1,2,1," + deg + "deg)";
 },1000);
+
+*/
