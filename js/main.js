@@ -48,9 +48,10 @@ document.querySelector('.transition').addEventListener('mouseout', () => {
 if(cube) {
    document.querySelector('.cube').style.display = "block";
    let deg = 0;
-
    setInterval(() => {
-      deg += 45
-      document.querySelector('.cube').style.transform = "rotate3d(1,2,1," + deg + "deg)";
+      if(document.hasFocus()){
+         deg += 45
+         document.querySelector('.cube').style.transform = "rotate3d(1,2,1," + deg + "deg)";
+      }
    },1000);
 }

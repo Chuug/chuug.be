@@ -213,7 +213,7 @@ a:hover{
    width: 300px;
    height: 300px;
    transition: 2s linear;
-   transform: rotate3d(1,1,1,45deg);
+   transform: rotate3d(1,2,1,45deg);
    transform-style: preserve-3d;
    position: fixed;
    top:60%;
