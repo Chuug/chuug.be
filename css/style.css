@@ -316,6 +316,7 @@ a:hover{
   .futur {
      border-left: 1px dashed white;
      margin-left: 20px;
+     border-right: none;
   }
 
   .cube {
