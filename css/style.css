@@ -209,6 +209,7 @@ a:hover{
 }
 
 .cube {
+   display:none;
    width: 300px;
    height: 300px;
    transition: 2s linear;
@@ -313,6 +314,7 @@ a:hover{
      margin-left: 20px !important;
   }
 
+  /*
   .futur {
      border-left: 1px dashed white;
      margin-left: 20px;
@@ -349,6 +351,7 @@ a:hover{
 .bottom {
    transform: rotateX(-90deg) translateZ(100px);
 }
+*/
 }
 
 @media (min-width: 576px){
