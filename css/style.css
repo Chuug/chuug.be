@@ -110,20 +110,20 @@ a:hover{
 /* -------------------------------- Timeline -------------------------------- */
 
 .timeline-right {
-   border-right: 1px solid white;
+   border-right: 1px solid rgb(240, 240, 240);
    position: relative;
    padding-right: 20px;
 }
 
 .timeline-left {
-   border-left: 1px solid white;
+   border-left: 1px solid rgb(240, 240, 240);
    position: relative;
    left:-1px;
    padding-left: 20px;
 }
 
 .futur {
-   border-right: 1px solid white;
+   border-right: 1px solid rgb(240, 240, 240);
    border-right-style: dashed;
 }
 
@@ -206,6 +206,7 @@ a:hover{
 .tl-title {
    padding: 10px;
    background-color: #333030;
+   box-shadow: 3px -3px 3px #333030 !important;
 }
 
 .cube {
@@ -296,7 +297,7 @@ a:hover{
 
   .timeline-right {
      border-right: 0;
-     border-left: 1px solid white;
+     border-left: 1px solid rgb(240, 240, 240);
      margin-left: 20px;
      text-align: left !important;
      padding-left: 20px;
@@ -315,7 +316,7 @@ a:hover{
   }
   
   .futur {
-     border-left: 1px dashed white;
+     border-left: 1px dashed rgb(240, 240, 240);
      margin-left: 20px;
      border-right: none;
      width: auto;

@@ -1,4 +1,17 @@
-let cube = false;
+function iOS() {
+   return [
+     'iPad Simulator',
+     'iPhone Simulator',
+     'iPod Simulator',
+     'iPad',
+     'iPhone',
+     'iPod'
+   ].includes(navigator.platform)
+   // iPad on iOS 13 detection
+   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+ }
+
+let cube = !iOS();
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
