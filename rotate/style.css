@@ -15,12 +15,12 @@
    position: absolute;
 }
 
-.front {
+.back {
    transform: translateZ(100px);
 }
 
-.back {
-   transform: rotateY(180deg) translateZ(100px);
+.front {
+   transform: translateZ(-100px);
 }
 
 .right {
@@ -37,4 +37,15 @@
 
 .bottom {
    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.test {
+   display: block;
+   width: 100px;
+   height: 100px;
+   background-color: aquamarine;
+   line-height: 25px;
+   text-align: center;
+   margin: auto;
+   margin-top: 50px;
 }
