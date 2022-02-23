@@ -2,41 +2,53 @@
    margin: auto;
    margin-top: 200px;
    width: 200px;
-   height: 200px;
-   transition: 2s linear;
-   transform: rotate3d(1,1,1,45deg);
+   height: 50px;
+   transition: 0.2s ease-in-out;
+   transform: rotate3d(0,0,0,0deg);
    transform-style: preserve-3d;
+   cursor: pointer;
+
 }
 
 .face {
    width: 100%;
    height: 100%;
-   border: 1px solid black;
    position: absolute;
+   border: 5px solid #f8f9fa;
+   box-sizing: border-box;
+   line-height: 35px;
+   text-align: center;
+   font-weight: bold;
+   filter: blur(0.3px);
+   background-color: #212529;
 }
 
 .back {
-   transform: translateZ(100px);
+   transform: translateZ(-25px);
 }
 
 .front {
-   transform: translateZ(-100px);
+   transform: translateZ(25px);
+   border-color: #adb5bd;
+   color: #adb5bd !important;
 }
 
 .right {
-   transform: rotateY(90deg) translateZ(100px);
+   transform: rotateY(90deg) translateZ(175px);
+   width: 50px;
 }
 
 .left {
-   transform: rotateY(-90deg) translateZ(100px);
+   transform: rotateY(-90deg) translateZ(25px);
+   width: 50px;
 }
 
 .top {
-   transform: rotateX(90deg) translateZ(100px);
+   transform: rotateX(90deg) translateZ(25px);
 }
 
 .bottom {
-   transform: rotateX(-90deg) translateZ(100px);
+   transform: rotateX(-90deg) translateZ(25px);
 }
 
 .test {
@@ -48,4 +60,58 @@
    text-align: center;
    margin: auto;
    margin-top: 50px;
+   z-index: 1000;
+}
+
+.roue{
+   transform: rotate(45deg);
+}
+
+
+.saturn {
+    
+   /* 
+    * Make the initial position to be the center of the circle you want this
+    * object follow.
+    */
+
+   left: 500px;
+   top: 143px;
+
+   /*
+    * Sets up the animation duration, timing-function (or easing)
+    * and iteration-count. Ensure you use the appropriate vendor-specific 
+    * prefixes as well as the official syntax for now. Remember, tools like 
+    * CSS Please are your friends!
+    */
+           animation: myOrbit 40s linear infinite; /* Chrome, Firefox 16+, 
+                                                     IE 10+, Safari 5 */
+   
+   
+   
+}
+
+/*
+* Set up the keyframes to actually describe the begining and end states of 
+* the animation.  The browser will interpolate all the frames between these 
+* points.  Again, remember your vendor-specific prefixes for now!
+*/
+@-webkit-keyframes myOrbit {
+   from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+   to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+   from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+   to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+   from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+   to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+   from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+   to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
