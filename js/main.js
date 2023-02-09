@@ -11,21 +11,12 @@ function iOS() {
    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
  }
 
-let cube = !iOS();
+cube = !iOS();
 
-if(cube) {
+if(cube)
    document.querySelector('.cube').style.display = "block";
-   let deg = 0;
 
-   function cube() {
-      if(document.hasFocus()){
-         deg += 45
-         document.querySelector('.cube').style.transform = "rotate3d(1,2,1," + deg + "deg)";
-      }
-   }
-   setInterval(cube,1000);
-}
-
+// bootstrap tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -46,27 +37,4 @@ document.querySelectorAll('.progress-bar').forEach((bar) => {
 
 document.querySelector('.backtoup').addEventListener('click', () => {
    window.scrollTo(0,document.body.scrollTop);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-   document.querySelectorAll('.photo').forEach((face) => {
-      face.style.transition = '1s';
-   });
-})
-
-
-let avatar = document.querySelector('.avatar');
-let me = document.querySelector('.me');
-let fond = document.querySelector('.fond');
-
-document.querySelector('.transition').addEventListener('mouseover', () => {
-   me.style.transform = 'rotate3d(0,1,0,180deg)';
-   fond.style.transform = 'rotate3d(0,1,0,180deg)';
-   avatar.style.transform = 'rotate3d(0,1,0,180deg)';
-});
-
-document.querySelector('.transition').addEventListener('mouseout', () => {
-   me.style.transform = 'rotate3d(0,1,0,0deg)';
-   fond.style.transform = 'rotate3d(0,1,0,0deg)';
-   avatar.style.transform = 'rotate3d(0,1,0,0deg)';
 });

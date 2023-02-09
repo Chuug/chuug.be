@@ -8,7 +8,7 @@
       <meta name="author" content="Hugo Collot">
       <meta name="copyright" content="Hugo Collot">
       <link rel="icon" href="img/icon/favicon.ico" />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
       <link rel="stylesheet" href="css/style.css">
       <title>Hugo Collot - Développeur web</title>
@@ -22,64 +22,43 @@
       <div class="face top"></div>
       <div class="face bottom"></div>
    </div>
-   <header class="sticky-top bg-me pt-3">
+   <header class="sticky-top bg-me">
       <div class="container">
-         <div class="row justify-content-center">    
-            <div class="col-7 col-sm-6 col-md-4 my-auto">
-               <h1 class="py-2 display-4" style="min-width: 200px;">Hugo Collot</h1>
+         <div class="row py-2 justify-content-center">    
+            <div class="col-9 my-auto">
+               <h1 class="display-6 text-center">Hugo Collot</h1>
                <div class="row bottominfo">
-                  <div class="col-12">
-                        <p class="my-0">
-                           <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-phone-fill mr-1 smarticon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                           </svg>
+                  <div class="col-12 text-left text-sm-center infos">
+                        <p class="my-0 mx-2 d-inline-block">
+                           <i class="fas fa-mobile-alt fa-fw mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Téléphone"></i>
                            <a href="tel:+32494607670">0494607670</a>
                         </p>
-                        <p class="my-0">
-                           <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill mr-1 smarticon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                           </svg>
+                        <p class="my-0 mx-2 d-inline-block">
+                           <i class="fas fa-envelope fa-fw mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Email"></i>
                            <a href="mailto:collot.hugo@gmail.com">collot.hugo@gmail.com</a>
+                        </p>
+                        <p class="my-0 mx-2 d-none d-sm-inline-block info-location">
+                           <i class="fas fa-map-marker-alt fa-fw mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Location"></i>
+                           Namur, Belgique
+                        </p>
+                        <p class="my-0 mx-2 d-none d-sm-inline-block info-birthdate">
+                           <i class="fas fa-calendar-day fa-fw mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Naissance"></i>
+                           6 avril 1990
                         </p>
                   </div>
                </div>
             </div>    
-            <div class="col-5 col-sm-6 col-md-4">      
-               <div class="transition mx-auto">
-                  <img src="img/Avatar.png" alt="Chuug Swagster" class="photo avatar img-fluid">
-                  <img src="img/fond.png" class="photo fond" alt="">
-                  <img src="img/me3.png" class="photo me img-fluid" alt="Hugo Collot">
-               </div>        
-            </div>
-            <div class="col-sm-4 col-md-4 my-auto rightinfo">
-               <p class="my-1">
-                  <i class="fas fa-mobile-alt fa-fw mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Téléphone"></i>
-                  <a href="tel:+32494607670">0494607670</a>
-               </p>
-               <p class="my-1">
-                  <i class="fas fa-envelope fa-fw mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Email"></i>
-                  <a href="mailto:collot.hugo@gmail.com">collot.hugo@gmail.com</a>
-               </p>
-               <p class="my-1">
-                  <i class="fas fa-map-marker-alt fa-fw mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Location"></i>
-                  Namur, Belgique
-               </p>
-               <p class="my-1">
-                  <i class="fas fa-calendar-day fa-fw mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Naissance"></i>
-                  6 avril 1990
-               </p>
-            </div> 
-      </div>
-      </div>
 
-      <hr>
+      </div>
+      </div>
+      <hr class="my-1">
    </header>
    <div class="container">
         <section class="mt-5">
             <div class="row">
                 <div class="col">
                     <h2 class="mb-4">Qui suis-je ?</h2>
-                    <p class="fst-italic">Je suis un autodidacte de 30 ans qui ne se repose jamais sur ses acquis. Le web
+                    <p class="fst-italic">Je suis un autodidacte qui ne se repose jamais sur ses acquis. Le web
                         est mon terrain de jeu dans ce monde de plus en plus numérisé et je
                         souhaite, aujourd'hui, mettre mes compétences ainsi que ma
                         motivation au service d'une entreprise. La vôtre peut-être ?</p>
@@ -392,8 +371,7 @@
             <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
         </svg>
     </a>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
