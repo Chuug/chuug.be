@@ -24,14 +24,14 @@ a:hover{
 
 .backtoup{
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: #444;
-    bottom:20px;
-    right:20px;
+    bottom:25px;
+    right:25px;
     border-radius: 50%;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 10px;
     box-shadow: 0 0 2px #666;
 }
 
@@ -44,10 +44,83 @@ a:hover{
     cursor: pointer;
 }
 
+.github {
+   position: fixed;
+   width: 60px;
+   height: 60px;
+   bottom: 65px;
+   right: 20px;
+}
+
+.linkedin {
+   position: fixed;
+   width: 60px;
+   height: 60px;
+   bottom: 115px;
+   right: 20px;
+}
+
 .pointer {
    cursor: pointer;
 }
 
+.skill-badge {
+   padding: 2px 5px;
+   margin: 0px 1px;
+   border: 1px solid;
+   border-radius: 5px;
+   font-size: 0.7em;
+   font-weight: bold;
+}
+
+.skill-title {
+
+}
+
+.skill-php {
+   border-color: #696a89;
+   color: #696a89;
+}
+
+.skill-js {
+   border-color: #f5e15e;
+   color: #f5e15e;
+}
+
+.skill-python {
+   border-color: #2b5b84;
+   color: #2b5b84;
+}
+
+.skill-java {
+   border-color: #ED1D25;
+   color: #ED1D25;
+}
+
+.skill-css {
+   border-color: #2962ff;
+   color: #2962ff;
+}
+
+.skill-html {
+   border-color: #F16529;
+   color: #F16529;
+}
+
+.skill-sql {
+   border-color: #699eca;
+   color: #699eca;
+}
+
+.skill-mongo {
+   border-color: #13AA52;
+   color: #13AA52;
+}
+
+.skill-linux {
+   border-color: #78516e;
+   color: #78516e;
+}
 /* ScrollBar */
 
 /* width */
